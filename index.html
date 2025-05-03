@@ -9,11 +9,11 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f0f2f5;
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
       color: #212529;
     }
     header {
-      background: url('https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      background-color: rgba(0, 0, 0, 0.6);
       color: #fff;
       text-align: center;
       padding: 4rem 1rem;
@@ -21,18 +21,14 @@
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
-      background-color: rgba(0,0,0,0.6);
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
     }
     .container {
-      max-width: 600px;
-      margin: -50px auto 40px;
+      max-width: 700px;
+      margin: -40px auto 40px;
       background: white;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
     h2 {
       font-size: 22px;
@@ -46,31 +42,52 @@
     }
     form {
       margin-top: 20px;
+      text-align: center;
     }
-    input, button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    input {
-      border: 1px solid #ced4da;
-    }
-    button {
-      background-color: #007bff;
+    .cta-button {
+      background-color: #6a11cb;
+      background-image: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
       color: white;
       border: none;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 10px;
+      font-weight: bold;
       cursor: pointer;
-      font-weight: 600;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
     }
-    button:hover {
-      background-color: #0056b3;
+    .cta-button:hover {
+      opacity: 0.9;
     }
-    .small-text {
-      font-size: 13px;
-      color: #6c757d;
-      margin-top: 10px;
+    .depoimentos {
+      margin-top: 40px;
+      background-color: #f3f0ff;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .depoimentos blockquote {
+      font-style: italic;
+      margin: 15px 0;
+    }
+    .referencias {
+      margin-top: 30px;
+    }
+    .insta-link {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #833ab4;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .insta-link:hover {
+      background-color: #6f2f99;
     }
     footer {
       text-align: center;
@@ -83,21 +100,38 @@
 <body>
 
   <header>
-    <h1>Guia Digital 2025</h1>
-    <p>Transforme seu conhecimento em renda com os produtos digitais mais promissores</p>
+    <h1>Guia de Produtos Digitais 2025</h1>
+    <p>Transforme seu conhecimento em renda com os produtos digitais mais promissores.</p>
   </header>
 
   <div class="container">
-    <h2>Receba o Guia Exclusivo</h2>
-    <p>Descubra os nichos mais lucrativos, como criar e lançar seu produto digital, com estratégias práticas para lucrar ainda em 2025.</p>
+    <h2>Baixe agora o guia completo</h2>
+    <p>Descubra os nichos mais lucrativos, estratégias de venda e ferramentas essenciais para lucrar no mercado digital em 2025 com insights de grandes nomes do marketing.</p>
 
-    <form action="mailto:joaomercadigital@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <button type="submit">Quero receber o guia</button>
-    </form>
+    <a class="cta-button" href="https://pay.kiwify.com/NDJESsr" target="_blank">Quero garantir meu guia agora</a>
 
-    <p class="small-text">* Seu e-mail está seguro. Nada de spam, prometido!</p>
+    <div class="depoimentos">
+      <h2>Depoimentos</h2>
+      <blockquote>"Com esse guia, consegui estruturar meu primeiro produto digital em uma semana. Muito didático!" – Ana Paula S.</blockquote>
+      <blockquote>"Conteúdo direto e prático. Ideal pra quem está começando!" – Rafael Lemos</blockquote>
+      <blockquote>"Melhor investimento que fiz para entender o mercado digital. Recomendo!" – Beatriz M.</blockquote>
+    </div>
+
+    <div class="referencias">
+      <h2>Com base nos maiores nomes do mercado:</h2>
+      <ul>
+        <li>Pedro Sobral (Copywriting e comunidade)</li>
+        <li>Pablo Marçal (Autoridade e posicionamento)</li>
+        <li>Érico Rocha (Fórmula de Lançamento)</li>
+        <li>Alex Vargas (Afiliados e estrutura digital)</li>
+        <li>Russell Brunson (Funis de vendas - EUA)</li>
+        <li>Gary Vaynerchuk (Conteúdo e branding - EUA)</li>
+      </ul>
+    </div>
+
+    <div style="text-align:center;">
+      <a class="insta-link" href="https://www.instagram.com/jloba.to?igsh=cmI5NGhpNnprcTNx" target="_blank">Me siga no Instagram</a>
+    </div>
   </div>
 
   <footer>
